@@ -16,7 +16,7 @@ part = args[3]
 print("Extracting Helium Void Fraction values")
 mofs = os.listdir(path)
 for mof in mofs:
-    filepath = path + "/" + "".join(mof)
+    filepath = path + os.sep + "".join(mof)
     try:
        shpath =  mofs_adsorption.apply_pressure(filepath,mode,part)
     except FileNotFoundError:
