@@ -9,7 +9,7 @@ import readcif
 Create an initial calculation folder and all simulation input file templates
 (Helium void Fraction; Adsorption; Henry coefficient;) and calculate the unitcell value;
 CIFPATH 
-eg: python MOFs_step1.py /WORK/nscc-gz_material_5/MOF/test/ref_try/mofdb/cif
+eg: python *.py ~/mofdb/cif
 '''
 
 def find_cif(filepath):
