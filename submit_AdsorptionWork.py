@@ -3,7 +3,7 @@
 import sys
 import random
 import os
-import Node
+import node
 import mofs_calc_dir
 import mofs_adsorption
 
@@ -26,7 +26,7 @@ for mof in mofs:
 #submit job
 homepath = os.path.expanduser('~')
 print("creating the batch scripts...")
-Node.creat_workdir(homepath,mode,part)
+node.creat_workdir(homepath,mode,part)
 #Node.split_job(mode,shpath,part)
 print("Start submitting mof "+mode+" calculation work...")
 submission = Node.submit_job(mode,shpath,part)
