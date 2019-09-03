@@ -9,7 +9,7 @@ import mofs_calc_dir
 
 Extract Helium void Fraction from before calculation and perform Adsorption calculation
 : CIFPATH + INDIVIDUAL CIF DIRECTORY
-eg: python MOFs_step2.py /WORK/nscc-gz_material_5/MOF/test/ref_try/mofdb/cif/ABAFUH.MOF_subset
+eg: python *.py ~/mofdb/cif/ABAFUH.MOF_subset
 
 '''
 
