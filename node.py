@@ -8,7 +8,7 @@ import mofs_calc_dir
 
 '''
 Create batch job submission script path and script file;
-eg: python .py /WORK/nscc-gz_material_5/MOF_WORK/Joblist/HeliumVF
+eg: python *.py ~/MOF_WORK/Joblist/HeliumVF
 '''
 
 def creat_workdir(homepath,mode,part):
