@@ -7,12 +7,10 @@ import node
 import mofs_calc_dir
 import mofs_adsorption
 
-
 args = sys.argv
 path = args[1]
 mode = args[2]
 part = args[3]
-#
 print("Extracting Helium Void Fraction values")
 mofs = os.listdir(path)
 for mof in mofs:
@@ -22,8 +20,6 @@ for mof in mofs:
     except FileNotFoundError:
         print(mof,"  Helium void Fraction was not found")
         continue 
-#print(shpath)
-#submit job
 homepath = os.path.expanduser('~')
 print("creating the batch scripts...")
 node.creat_workdir(homepath,mode,part)
@@ -32,5 +28,3 @@ print("Start submitting mof "+mode+" calculation work...")
 submission = Node.submit_job(mode,shpath,part)
 if submission is True:
     exit(0) 
-
-
