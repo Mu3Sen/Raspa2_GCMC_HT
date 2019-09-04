@@ -30,7 +30,6 @@ def creat_workdir(homepath,mode,part):
 
     return sh_path,submit_workdir
 
-
 def split_job(mode,shpath,part):
     homepath = os.path.expanduser('~')
     shnum = 24
@@ -113,8 +112,7 @@ def submit_job(mode,shpath,part):
             submission = True
 
     return submission
-    #return batch_list
-    #return yhbatch_id
+
 def check_job(batchname):
     id_cmd = "yhacct  --name  " + batchname.replace("\n","") +"  "+"| awk '{print $1;}' | sed -n \"3, 1p\""
     #print("id_cmd is\n ",id_cmd)
@@ -148,7 +146,6 @@ def check_finished_job(batch_id):
         slurm = False
 
     return slurm
-
 
 if __name__ == '__main__':
     import sys
