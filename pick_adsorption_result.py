@@ -11,7 +11,7 @@ def iter_files(root_dir):
             outfile_extension = ".data"
             path,tmpfilename = os.path.split(file_name)
             filename,extension = os.path.splitext(tmpfilename)
-            ads = str(file_name).split("/")[7]
+            ads = str(file_name).split("/")[-5]
             if extension == outfile_extension and ads == "Adsorption":
                 outputfile.append(file_name)
 
